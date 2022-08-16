@@ -9,7 +9,7 @@ This project explores a dataset of kickstarter campaigns for our fictional clien
 we will explore how launch data and setting of monitary goals may impact the success of campaigns for theatrical plays and present some initial conclusions. 
 
 ## Analysis and Challenges
-bwloe is a screenshot of the first few rows of our initial raw data set
+Below is a screenshot of the first few rows of our initial raw data set
 ![Raw_Data_Snippit](https://github.com/JamesonThornton/UCB_Data_bootcamp/blob/main/Raw_Data.png?raw=true)
 it contains over 4000 campaigns across more than a dozen major categories. one initial item to be adjusted is the date format representation. it is provided in Unix timestamp so we convert it to a more easily human readable format (MM/DD/YYYY for US user)
 
