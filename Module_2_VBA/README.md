@@ -32,25 +32,34 @@ the primary driver for this gain in efficiency is the way in which we loop throu
 the initial code set had nested for loops. the outer loop has 12 rounds, one for each ticker symbol, but for each it loops through the entire data set of ~3000 rows. 
 this is essentially looping through 36k rows of data
 
-'''
+
 > For i = 0 to 11
+
 >.....
+
 >    For j = to rowStart to rowEnd
 >...
+
 >    next j
+
 >next i
-'''
+
 
 the refactored code only loops through the data once (3k rows) and stores information as it traverses. 
 
-'''
+
 >For i = 2 to RowCount
+
 >....
+
 >next i
+
 >For i = 0 to 11
+
 >....
+
 >next i
-'''
+
 
 ## Limitations
 This code does have some noted limitations. as it loops through the stock symbols it assumes that each symbol is clumped together, and that it is in chronological order. if the data were not in this assumed order the results would be significnatly incorrect for both volume (needs contiguous ticker symbols, though dates dont matter) and for the total gains/losses (which assumes the first instance of a ticker symbol is the earliest, and the last is the latest). 
