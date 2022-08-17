@@ -37,10 +37,10 @@ this is essentially looping through 36k rows of data
 
 >.....
 
->    For j = to rowStart to rowEnd
+>   For j = to rowStart to rowEnd
 >...
 
->    next j
+>   next j
 
 >next i
 
