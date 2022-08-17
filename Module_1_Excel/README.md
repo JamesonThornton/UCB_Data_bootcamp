@@ -10,7 +10,7 @@ we will explore how launch data and setting of monitary goals may impact the suc
 
 ## Analysis and Challenges
 Below is a screenshot of the first few rows of our initial raw data set
-![Raw_Data_Snippit](https://github.com/JamesonThornton/UCB_Data_bootcamp/blob/main/Raw_Data.png?raw=true)
+![Raw_Data_Snippit](https://github.com/JamesonThornton/UCB_Data_bootcamp/blob/main/Module_1_Excel/resources/Raw_Data.png?raw=true)
 it contains over 4000 campaigns across more than a dozen major categories. one initial item to be adjusted is the date format representation. it is provided in Unix timestamp so we convert it to a more easily human readable format (MM/DD/YYYY for US user)
 
 A further data engineering task was to break apart the Category and Subcategory for easier filtering. 
@@ -18,7 +18,7 @@ A further data engineering task was to break apart the Category and Subcategory 
 ### Analysis of Outcomes Based on Launch Date
 we explored the relation between the success of a theatrical play campaign and the start date of the campaign. we can see the graphical results of the data in the chart below:
 
-![Campaign Outcome based on Launch Date](https://raw.githubusercontent.com/JamesonThornton/UCB_Data_bootcamp/main/Launch_Time_Success_Correlation_by_month.png)
+![Campaign Outcome based on Launch Date](https://github.com/JamesonThornton/UCB_Data_bootcamp/blob/main/Module_1_Excel/resources/Theater_Outcomes_vs_Launch.png?raw=true)
 
 we see a general trend of higher success in the spring time, peaking in May and continuing to decline throughout the year with the least successful time of campaigns starting in December. 
 
@@ -28,7 +28,7 @@ cancellations do not seem to be correlated with time of year for launch date.
 We explore the relation between success of a theatrical play campaign and the fundraising goal. 
 The data is displayed in a chart below for reference:
 
-![Campagin Outcome based on Goal](https://raw.githubusercontent.com/JamesonThornton/UCB_Data_bootcamp/main/Outcomes_vs_Goals.png)
+![Campagin Outcome based on Goal](https://github.com/JamesonThornton/UCB_Data_bootcamp/blob/main/Module_1_Excel/resources/Outcomes_vs_Goals.png?raw=true)
 
 somewhat unsurprisingly we see a higher success rate of theeatrical play campaigns with lower fundraising goals. we see the success rate begins to invert between $15,000 and $20,000 goals with failure being more likely than success. we see another inversion from $35,000 to $45,000; this is not yet understood and may be looked into further. 
 
