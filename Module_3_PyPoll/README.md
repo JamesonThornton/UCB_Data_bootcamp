@@ -12,7 +12,6 @@ script shall tabulate:
 *the largest county turn out
 
 ## Election Results
-```
 Total Votes: 369,711
 -------------------
 County Breakdown:
@@ -31,7 +30,6 @@ Winner: Diana DeGette
 Winning Vote Count: 272,892
 Winning Percentage: 73.8%
 -------------------------
-```
 
 ## Summary
 This code can be reused without modification for any election that contains the county name in the second column, and the chosen candidate in the third column and report summary results including the cnadidate with the most votes. 
