@@ -32,8 +32,8 @@ Winning Percentage: 73.8%
 
 
 ## Summary
-This code can be reused without modification for any election that contains the county name in the second column, and the chosen candidate in the third column and report summary results including the cnadidate with the most votes. 
-with modifications this script could be used to:
+1. This code can be reused without modification for any election that contains the county name in the second column, and the chosen candidate in the third column and report summary results including the cnadidate with the most votes. 
+1. with modifications this script could be used to:
 1. Provide summaries of results across several categories 
    - this could include candidate, precinct, zip code, county, state or other unique qwualifier per vote
    - to achieve this we could make blocks of scripts similar to the counties summary block for each category desired
