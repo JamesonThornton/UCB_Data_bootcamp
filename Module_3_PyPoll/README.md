@@ -33,10 +33,10 @@ Winning Percentage: 73.8%
 
 ## Summary
 1. This code can be reused without modification for any election that contains the county name in the second column, and the chosen candidate in the third column and report summary results including the cnadidate with the most votes. 
-1. with modifications this script could be used to:
-1. Provide summaries of results across several categories 
-   - this could include candidate, precinct, zip code, county, state or other unique qwualifier per vote
-   - to achieve this we could make blocks of scripts similar to the counties summary block for each category desired
-2. with another column indicating the election race, this code could be modified to count and report on multiple elections or referendums in a single input list
-   - this would require another column with the election race noted
-   - it would also be necesarry to add another layer to the dictionaries to account for the different races for logic, accounting, and reporting purposes
+2. with modifications this script could be used to:
+   - Provide summaries of results across several categories 
+     - this could include candidate, precinct, zip code, county, state or other unique qwualifier per vote
+     - to achieve this we could make blocks of scripts similar to the counties summary block for each category desired
+   - with another column indicating the election race, this code could be modified to count and report on multiple elections or referendums in a single input list
+     - this would require another column with the election race noted
+     - it would also be necesarry to add another layer to the dictionaries to account for the different races for logic, accounting, and reporting purposes
