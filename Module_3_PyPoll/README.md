@@ -37,6 +37,7 @@ Winning Vote Count: 272,892
 
 Winning Percentage: 73.8%
 
+----------
 
 ## Summary
 1. This code can be reused without modification for any election that contains the county name in the second column, and the chosen candidate in the third column and report summary results including candidate and county breakdown as well as the winning candidate. 
