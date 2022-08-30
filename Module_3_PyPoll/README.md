@@ -15,12 +15,16 @@ script shall tabulate:
 -------------------
 Total Votes: 369,711
 
+----------
+
 County Breakdown:
  - Jefferson: 10.5% (38,855)
  - Denver: 82.8% (306,055)
  - Arapahoe: 6.7% (24,801)
 
 Denver County had the largest voter turnout
+
+-------
 
 Candidate Breakdown:
  - Charles Casper Stockham: 23.0% (85,213)
