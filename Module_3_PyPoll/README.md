@@ -12,15 +12,16 @@ script shall tabulate:
 - the largest county turn out
 
 ## Election Results
+-------------------
 Total Votes: 369,711
----------------------
+
 County Breakdown:
  - Jefferson: 10.5% (38,855)
  - Denver: 82.8% (306,055)
  - Arapahoe: 6.7% (24,801)
 
 Denver County had the largest voter turnout
----------------------
+
 Candidate Breakdown:
  - Charles Casper Stockham: 23.0% (85,213)
  - Diana DeGette: 73.8% (272,892)
@@ -31,7 +32,7 @@ Winner: Diana DeGette
 Winning Vote Count: 272,892
 
 Winning Percentage: 73.8%
-----------------------
+
 
 ## Summary
 1. This code can be reused without modification for any election that contains the county name in the second column, and the chosen candidate in the third column and report summary results including candidate and county breakdown as well as the winning candidate. 
