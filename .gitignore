@@ -130,3 +130,6 @@ dmypy.json
 
 # Distribution / packaging
 *.DS_Store
+
+#zip files
+*.zip
