@@ -27,11 +27,10 @@ detailed results can be found at the jupyter notebook at the link below:
 [jupyter notebook analysis](Modified.ipynb)
 
 
-
 ## Conclusion
 
 there are a significant number of null reading (1968) and math scores (982). it may be useful to understand why they are null and perhaps find another method to mitigate rather drop the entire rows (perhaps set them to average or NaN). 
-
+ 
 based on the data still available the primary take-aways I saw were that generally the charter schools appeared to have less funding and produce slightly higher reading scores. 
 
 
