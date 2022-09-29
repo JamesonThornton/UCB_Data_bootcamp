@@ -27,13 +27,13 @@ one major challenge that was indirectly related to the project was that I could 
 - The WeatherPy_Database contains over 700 cities found from our 2000 lat/long pairs.
 - WeatherPy_vacation contains 327 cities; most, but not all, of which have hotels (this is filtered based on user input of min 65 and max 85 degrees F).
 
-![WeatherPy_Vacation_map](Vacation_Search\WeatherPy_vacation_map.png)
+![WeatherPy_Vacation_map](Vacation_Search/WeatherPy_vacation_map.png)
 
 - Weather_Vacation_Map includes travel paths shown on the map
 
-![WeatherPy_travel_map](Vacation_Itinerary\WeatherPy_travel_map.png)
+![WeatherPy_travel_map](Vacation_Itinerary/WeatherPy_travel_map.png)
 
-![WeatherPy_travel_map_markers](Vacation_Itinerary\WeatherPy_travel_map_markers.png)
+![WeatherPy_travel_map_markers](Vacation_Itinerary/WeatherPy_travel_map_markers.png)
 
 ## Conclusion
 APIs are a powerful skill to add to the toolbelt. access to data across the web enables so many possibilities for future data analysis and exploration. 
