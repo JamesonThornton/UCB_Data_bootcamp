@@ -83,4 +83,85 @@ WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 	AND (de.to_date='9999-01-01')
 ORDER BY e.emp_no
 
+-------   Count retire eligible employees by title   -------------------------------------
+SELECT 	urt.title,
+	COUNT(urt.title) as "retire eligible count"
+FROM unique_retire_titles as urt
+GROUP BY (urt.title)
+ORDER BY urt.title;
 
+
+
+----------  count current employees by title   ---------------------------------
+SELECT 	t.title,
+	COUNT(t.title) as "total current employees"
+FROM	titles as t
+WHERE t.to_date = ('9999-01-01')
+GROUP BY (t.title)
+ORDER BY t.title;
+
+------------------- Mentor count by title -------------------------
+SELECT me.title, 
+	COUNT(me.title) as "mentor title count"
+FROM mentor_eligible as me
+GROUP BY me.title
+ORDER BY me.title;
+
+
+--------------------- current employees by dept --------------------------------------------
+SELECT d.dept_name, 
+	COUNT(de.dept_no) as "dept current employee count"
+FROM dept_emp as de
+INNER JOIN departments as d
+ON de.dept_no = d.dept_no
+WHERE to_date='9999-01-01'
+GROUP BY d.dept_name
+ORDER BY d.dept_name;
+
+------------- retire by dept with dept name  ---------------
+SELECT rbd.count,
+	d.dept_name
+FROM retire_by_dept as rbd
+INNER JOIN departments as d
+ON rbd.dept_no = d.dept_no
+ORDER BY d.dept_name;
+
+
+----------------- mentor by dept name ----------------------
+SELECT d.dept_name,
+	COUNT(me.emp_no)
+FROM mentor_eligible as me
+INNER JOIN dept_emp as de
+ON me.emp_no = de.emp_no
+INNER JOIN departments as d
+ON de.dept_no = d.dept_no
+GROUP BY d.dept_name
+ORDER BY d.dept_name;
+
+
+
+--------- pivot?
+SELECT d.dept_name,
+--	me.title,
+	COUNT(me.emp_no) as Engineer_count
+FROM mentor_eligible as me
+
+INNER JOIN dept_emp as de
+ON me.emp_no = de.emp_no
+
+INNER JOIN departments as d
+ON de.dept_no = d.dept_no
+
+WHERE me.title in('Engineer')
+GROUP BY (d.dept_name, me.title)
+ORDER BY d.dept_name;
+
+
+-----  Current employees  --------------------
+SELECT 
+	e.emp_no,
+	e.first_name,
+	e.last_name,
+	e.to_date
+FROM emp_info as e
+WHERE e.to_date = '9999-01-01';
