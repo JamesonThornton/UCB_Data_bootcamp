@@ -12,15 +12,26 @@ using SQLite, SQLAlchemy, and Flask gather weather data for Hawaii to investigat
 #### Deliverables
 1. June data summary statistics
 
-![](June_Temps_Stats.png)
+![](resources\June_Temps_Stats.png)
 
 2. December data summary statistics
 
-![](Dec_Temps_Stats.png)
+![](resources\Dec_Temps_Stats.png)
 
 but graphical displays can be more readily digestible than tables, so a boc plot may be valuable:
 
-![](Hawaii_temps_boxplot.png)
+![](resources\Hawaii_temps_boxplot.png)
+
+
+3. we can also gather precipitation data for the respective months to explore these factors as well
+
+![](resources\June_Stats.png)
+
+![](resources\Dec_Stats.png)
+
+and we should include a chart to help us visualize since a statistics table may not tell us as much initially
+
+![](resources\precip_chart.png)
 
 ## Challenges
 understanding what data is in the session result (e.g. columns) is not as intuitive as pandas. 
@@ -28,3 +39,13 @@ I also had some challenges in approaching gathering data for a given month for a
 
 ## Conclusion
 we can leverage python and SQLAlchemy to interface with SQLite (and presumably a SQL database) to leverage the power of python and pandas to do additional analysis without having to switch between applications. 
+
+1. June weather has warmer weather than December for 
+   - max 
+   - average
+   - and min
+2. June has less precipitation for
+    - max
+    - mean
+    - and all quartiles
+
