@@ -72,8 +72,8 @@ function updateFilters() {
       // filteredData = filteredData.filter(row => row.datetime === filters.date);
     // }
 
-    if (filters.date) {
-      filteredData = filteredData.filter(row => row.datetime === filters.date)
+    if (filters.datetime) {
+      filteredData = filteredData.filter(row => row.datetime === filters.datetime)
     }
     if (filters.country) {
       filteredData = filteredData.filter(row => row.country === filters.country)
