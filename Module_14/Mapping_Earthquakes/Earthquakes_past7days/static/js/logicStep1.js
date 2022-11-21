@@ -19,7 +19,7 @@ attribution: 'Map data © <a href="https://www.openstreetmap.org/">OpenStreetMap
     // id: 'mapbox/streets-v11',
     maxZoom: 18,
     accessToken: API_KEY
-
+});
 // Create a base layer that holds both maps.
 let baseMaps = {
   "Streets": street,
@@ -30,11 +30,11 @@ let baseMaps = {
 // Create the map object with a center and zoom level.
 let map = L.map("mapid", {
   center: [39.5, -98.5],
-  zoom: 3
+  zoom: 3,
   layers: [street]
 });
 
-L.control.layers(baseMaps).addTo(map)
+L.control.layers(baseMaps).addTo(map);
 
 let quakes_7Day = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson"
 
