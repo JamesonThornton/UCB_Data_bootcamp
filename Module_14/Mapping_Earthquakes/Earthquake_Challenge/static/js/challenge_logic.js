@@ -147,7 +147,11 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
       pointToLayer: function(feature, latlng) {
         console.log(data);
         return L.lineString(latlng);
-      }
+      },
+    style: {
+      color: "#ff0000",
+      weight: 3
+    }
     }).addTo(techPlates);
   })
   techPlates.addTo(map);
