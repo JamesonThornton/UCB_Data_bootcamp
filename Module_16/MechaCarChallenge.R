@@ -19,6 +19,6 @@ data_lot1 <- susp_raw %>% filter(Manufacturing_Lot=='Lot1')
 data_lot2 <- susp_raw %>% filter(Manufacturing_Lot=='Lot2')
 data_lot3 <- susp_raw %>% filter(Manufacturing_Lot=='Lot3')
 
-t.test(data_lot1$PSI,data_lot2$PSI,paired = T) #compare the mean difference between two samples
-t.test(data_lot2$PSI,data_lot3$PSI,paired = T) #compare the mean difference between two samples
-t.test(data_lot3$PSI,data_lot1$PSI,paired = T) #compare the mean difference between two samples
+t.test(data_lot1$PSI,mu=mean(susp_raw$PSI)) 
+t.test(data_lot2$PSI,mu=mean(susp_raw$PSI)) 
+t.test(data_lot3$PSI,mu=mean(susp_raw$PSI)) 
