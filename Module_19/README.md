@@ -15,11 +15,11 @@ we determined that 4 clusters would be optimal
 
 we added 3 principal component columns to aid in our clustering analysis. 
 
-![](resources/3d_plot_1.png)
+![](resources/3D_Plot_1.png)
 
-![](resources/3d_plot_2.png)
+![](resources/3D_Plot_2.png)
 
-![](resources/3d_plot_3.png)
+![](resources/3D_Plot_3.png)
 
 and we see our clusters forming rather nicely. 
 
